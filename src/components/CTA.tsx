@@ -39,9 +39,16 @@ export const CTA = () => {
               </div>
             </div>
             
-            <Button size="lg" variant="hero" className="text-xl px-12 py-8 h-auto">
-              Garantir Minha Vaga Agora
-              <ArrowRight className="w-6 h-6" />
+            <Button 
+              size="lg" 
+              variant="hero" 
+              className="text-xl px-12 py-8 h-auto"
+              asChild
+            >
+              <a href="https://go.tribopay.com.br/0k1te" target="_blank" rel="noopener noreferrer">
+                Quero Começar Agora
+                <ArrowRight className="w-6 h-6" />
+              </a>
             </Button>
             
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border/50">

@@ -1,12 +1,16 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Star } from "lucide-react";
+import testimonial1 from "@/assets/testimonial-1.jpg";
+import testimonial2 from "@/assets/testimonial-2.jpg";
+import testimonial3 from "@/assets/testimonial-3.jpg";
 
 const testimonials = [
   {
     name: "Ana Silva",
     role: "Professora",
     initials: "AS",
+    image: testimonial1,
     content: "Nunca imaginei que investir pudesse ser tão simples. Em 3 meses já estava fazendo meus primeiros investimentos com confiança!",
     rating: 5
   },
@@ -14,6 +18,7 @@ const testimonials = [
     name: "Carlos Mendes",
     role: "Engenheiro",
     initials: "CM",
+    image: testimonial3,
     content: "O melhor investimento que fiz foi neste curso. Hoje minha carteira cresce consistentemente e entendo exatamente o que estou fazendo.",
     rating: 5
   },
@@ -21,6 +26,7 @@ const testimonials = [
     name: "Marina Santos",
     role: "Designer",
     initials: "MS",
+    image: testimonial2,
     content: "Didática excepcional! Sai do zero absoluto para ter uma carteira diversificada em poucos meses. Recomendo demais!",
     rating: 5
   }
@@ -61,6 +67,7 @@ export const Testimonials = () => {
                 
                 <div className="flex items-center gap-3 pt-4 border-t border-border">
                   <Avatar className="bg-primary/20">
+                    <AvatarImage src={testimonial.image} alt={testimonial.name} />
                     <AvatarFallback className="text-primary font-bold">
                       {testimonial.initials}
                     </AvatarFallback>

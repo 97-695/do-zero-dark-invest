@@ -31,12 +31,11 @@ export const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <Button size="lg" variant="hero" className="text-lg px-8 py-6 h-auto">
-              Quero Começar Agora
-              <ArrowRight className="w-5 h-5" />
-            </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-6 h-auto border-primary/30 hover:border-primary">
-              Ver Conteúdo do Curso
+            <Button size="lg" variant="hero" className="text-lg px-8 py-6 h-auto" asChild>
+              <a href="https://go.tribopay.com.br/0k1te" target="_blank" rel="noopener noreferrer">
+                Quero Começar Agora
+                <ArrowRight className="w-5 h-5" />
+              </a>
             </Button>
           </div>
           
