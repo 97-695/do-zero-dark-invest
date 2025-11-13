@@ -22,7 +22,7 @@ export const Hero = () => {
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
             Do Zero ao{" "}
             <span className="glow-text-green bg-gradient-to-r from-primary to-success bg-clip-text text-transparent">
-              Investidor
+              Investidor Milionário
             </span>
           </h1>
           
