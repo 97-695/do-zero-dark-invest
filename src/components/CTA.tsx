@@ -26,15 +26,9 @@ export const CTA = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <div className="text-left">
-                <div className="text-sm text-muted-foreground line-through">
-                  De R$ 997,00
-                </div>
-                <div className="text-4xl font-bold glow-text-green">
-                  R$ 497,00
-                </div>
-                <div className="text-sm text-muted-foreground">
-                  ou 12x de R$ 49,90
+              <div className="text-center">
+                <div className="text-5xl font-bold glow-text-green">
+                  R$ 27,90
                 </div>
               </div>
             </div>
